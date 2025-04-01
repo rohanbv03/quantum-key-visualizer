@@ -79,7 +79,7 @@ const ComparisonSection: React.FC = () => {
               
               <tr className="border-b border-quantum-purple/20">
                 <td className="p-3 font-medium">Key Distribution Range</td>
-                <td className="p-3 text-center bg-quantum-purple/5">Limited (typically < 100km)</td>
+                <td className="p-3 text-center bg-quantum-purple/5">Limited (typically &lt; 100km)</td>
                 <td className="p-3 text-center bg-quantum-blue/5">Global (internet-based)</td>
               </tr>
               
