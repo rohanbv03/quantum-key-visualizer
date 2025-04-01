@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '@/components/NavBar';
 import BB84Visualization from '@/components/BB84Visualization';
 import ExplanationCard from '@/components/ExplanationCard';
+import ComparisonSection from '@/components/ComparisonSection';
 import Footer from '@/components/Footer';
 import { Key, Shield } from 'lucide-react';
 
@@ -58,6 +59,11 @@ const Index = () => {
               Any attempt to intercept the quantum communication will disturb the system and be detected by the legitimate users.
             </p>
           </div>
+        </div>
+
+        {/* Comparison Section */}
+        <div className="mb-12">
+          <ComparisonSection />
         </div>
         
         {/* Explanation Section */}
