@@ -2,6 +2,7 @@
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import BB84Visualization from '@/components/BB84Visualization';
+import TraditionalKeyDistribution from '@/components/TraditionalKeyDistribution';
 import ExplanationCard from '@/components/ExplanationCard';
 import ComparisonSection from '@/components/ComparisonSection';
 import Footer from '@/components/Footer';
@@ -23,9 +24,14 @@ const Index = () => {
           </p>
         </div>
         
-        {/* Main Visualization */}
+        {/* Quantum Visualization */}
         <div className="mb-12">
           <BB84Visualization />
+        </div>
+        
+        {/* Traditional Visualization */}
+        <div className="mb-12">
+          <TraditionalKeyDistribution />
         </div>
         
         {/* Features Grid */}
