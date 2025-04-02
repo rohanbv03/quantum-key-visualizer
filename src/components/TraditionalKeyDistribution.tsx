@@ -110,7 +110,7 @@ const TraditionalKeyDistribution: React.FC = () => {
             {/* Alice and Bob */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="flex flex-col items-center">
-                <Person name="Alice" />
+                <Person name="Alice" role="sender" />
                 {aliceKey && (
                   <div className="mt-4 bg-quantum-blue/20 p-2 rounded border border-quantum-blue/30">
                     <div className="flex items-center gap-2">
@@ -144,7 +144,7 @@ const TraditionalKeyDistribution: React.FC = () => {
                   {/* Eve position */}
                   {showEavesdropper && (
                     <div className="absolute flex flex-col items-center">
-                      <Person name="Eve" isEvil={true} />
+                      <Person name="Eve" role="eavesdropper" />
                       {step >= 2 && interceptedKey && (
                         <div className="mt-2 bg-red-500/20 p-2 rounded border border-red-500/30">
                           <div className="flex items-center gap-2">
@@ -159,7 +159,7 @@ const TraditionalKeyDistribution: React.FC = () => {
               </div>
 
               <div className="flex flex-col items-center">
-                <Person name="Bob" />
+                <Person name="Bob" role="receiver" />
                 {step >= 3 && bobKey && (
                   <div className="mt-4 bg-quantum-blue/20 p-2 rounded border border-quantum-blue/30">
                     <div className="flex items-center gap-2">
