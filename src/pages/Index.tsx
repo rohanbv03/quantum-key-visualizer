@@ -6,7 +6,7 @@ import TraditionalKeyDistribution from '@/components/TraditionalKeyDistribution'
 import ExplanationCard from '@/components/ExplanationCard';
 import ComparisonSection from '@/components/ComparisonSection';
 import Footer from '@/components/Footer';
-import { Key, Shield } from 'lucide-react';
+import { Key, Shield, Database, Server, CreditCard, Wallet } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -22,6 +22,33 @@ const Index = () => {
           <p className="text-lg md:text-xl text-quantum-light/80 max-w-2xl mx-auto">
             Secure communication through the fascinating world of quantum mechanics
           </p>
+        </div>
+        
+        {/* Server and Banking Graphics */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-quantum-blue/10 backdrop-blur-sm rounded-lg p-6 quantum-border flex items-center">
+            <div className="mr-6">
+              <Server className="h-20 w-20 text-quantum-cyan animate-pulse-glow" />
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold mb-2 text-quantum-light">Secure Server Infrastructure</h3>
+              <p className="text-quantum-light/70">
+                Quantum cryptography enhances traditional server security with unbreakable encryption protocols.
+              </p>
+            </div>
+          </div>
+          
+          <div className="bg-quantum-purple/10 backdrop-blur-sm rounded-lg p-6 quantum-border flex items-center">
+            <div className="mr-6">
+              <CreditCard className="h-20 w-20 text-quantum-cyan animate-pulse-glow" />
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold mb-2 text-quantum-light">Financial Security</h3>
+              <p className="text-quantum-light/70">
+                Banking systems worldwide are investing in quantum technologies to safeguard financial transactions.
+              </p>
+            </div>
+          </div>
         </div>
         
         {/* Quantum Visualization */}
@@ -48,21 +75,21 @@ const Index = () => {
           
           <div className="bg-quantum-purple/20 backdrop-blur-sm rounded-lg p-6 quantum-border">
             <div className="rounded-full w-12 h-12 flex items-center justify-center bg-quantum-purple/30 mb-4">
-              <Key className="h-6 w-6 text-quantum-cyan" />
+              <Database className="h-6 w-6 text-quantum-cyan" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-quantum-light">BB84 Protocol</h3>
+            <h3 className="text-lg font-semibold mb-2 text-quantum-light">Data Protection</h3>
             <p className="text-sm text-quantum-light/70">
-              The first quantum cryptographic protocol that uses quantum properties for secure key exchange between two parties.
+              Keep sensitive data secure with quantum-resistant encryption methods that guard against future attack vectors.
             </p>
           </div>
           
           <div className="bg-quantum-cyan/20 backdrop-blur-sm rounded-lg p-6 quantum-border">
             <div className="rounded-full w-12 h-12 flex items-center justify-center bg-quantum-cyan/30 mb-4">
-              <Shield className="h-6 w-6 text-quantum-cyan" />
+              <Wallet className="h-6 w-6 text-quantum-cyan" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-quantum-light">Eavesdropper Detection</h3>
+            <h3 className="text-lg font-semibold mb-2 text-quantum-light">Banking Applications</h3>
             <p className="text-sm text-quantum-light/70">
-              Any attempt to intercept the quantum communication will disturb the system and be detected by the legitimate users.
+              Next-generation security for financial transactions and sensitive customer data in the banking industry.
             </p>
           </div>
         </div>
