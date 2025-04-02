@@ -5,32 +5,32 @@
 
 @layer base {
   :root {
-    --background: 240 47% 3%;
-    --foreground: 210 40% 98%;
+    --background: 210 33% 99%;
+    --foreground: 210 30% 20%;
 
-    --card: 240 40% 4%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 20%;
 
-    --popover: 240 40% 4%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 20%;
 
-    --primary: 217 91% 60%;
+    --primary: 210 100% 33%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 250 70% 35%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 43 77% 52%;
+    --secondary-foreground: 210 30% 20%;
 
-    --muted: 240 10% 13%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 210 20% 93%;
+    --muted-foreground: 215 20% 45%;
 
-    --accent: 192 85% 55%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 165 85% 35%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 30% 20%;
 
-    --border: 240 13% 20%;
-    --input: 240 13% 20%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
     --ring: 190 90% 50%;
 
     --radius: 0.5rem;
@@ -43,9 +43,10 @@
   }
 
   body {
-    @apply bg-quantum-dark text-quantum-light;
-    background-image: radial-gradient(circle at 1px 1px, rgba(62, 31, 146, 0.15) 2px, transparent 0);
-    background-size: 30px 30px;
+    @apply bg-bank-light text-bank-gray;
+    background-image: linear-gradient(to right, rgba(0,45,98,0.02) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0,45,98,0.02) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 
   ::-webkit-scrollbar {
@@ -54,23 +55,23 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(10, 36, 99, 0.2);
+    background: rgba(0, 45, 98, 0.05);
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(62, 31, 146, 0.6);
+    background: rgba(0, 71, 171, 0.3);
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(76, 201, 240, 0.6);
+    background: rgba(0, 71, 171, 0.5);
   }
 }
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 10px rgba(76, 201, 240, 0.7);
+    text-shadow: 0 0 10px rgba(0, 71, 171, 0.3);
   }
   
   .quantum-border {
@@ -80,12 +81,26 @@
   .quantum-border::before {
     content: '';
     @apply absolute inset-0 p-[1px] rounded-md;
-    background: linear-gradient(45deg, #4CC9F0, #3E1F92, #0A2463, #4CC9F0);
+    background: linear-gradient(45deg, #0047AB, #002D62, #006400, #D4AF37);
     background-size: 400% 400%;
     animation: gradient-animation 4s ease infinite;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+  }
+  
+  .bank-card {
+    @apply relative rounded-lg bg-white shadow-md border border-gray-100 overflow-hidden transition-all duration-300;
+  }
+  
+  .bank-card:hover {
+    @apply shadow-lg transform -translate-y-1;
+  }
+  
+  .bank-card::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-1;
+    background: linear-gradient(90deg, #0047AB, #D4AF37, #006400);
   }
   
   @keyframes gradient-animation {
