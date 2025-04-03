@@ -8,7 +8,7 @@ const ComparisonSection: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Main comparison card */}
-      <Card className="bg-background/50 backdrop-blur-sm border-quantum-purple/20 shadow-lg shadow-quantum-purple/5">
+      <Card className="bg-black border-quantum-purple/20 shadow-lg shadow-quantum-purple/5">
         <CardHeader>
           <CardTitle className="text-center">Quantum vs Traditional Key Distribution</CardTitle>
         </CardHeader>
@@ -19,13 +19,13 @@ const ComparisonSection: React.FC = () => {
               <TableHeader>
                 <TableRow className="border-b border-quantum-purple/30">
                   <TableHead className="text-left p-3 w-1/3">Feature</TableHead>
-                  <TableHead className="p-3 text-center bg-quantum-purple/10">
+                  <TableHead className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">
                     <div className="flex items-center justify-center gap-2">
                       <Key size={18} className="text-quantum-cyan" />
                       <span>Quantum Key Distribution</span>
                     </div>
                   </TableHead>
-                  <TableHead className="p-3 text-center bg-quantum-blue/10">
+                  <TableHead className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">
                     <div className="flex items-center justify-center gap-2">
                       <Lock size={18} className="text-quantum-light" />
                       <span>Traditional Key Distribution</span>
@@ -36,18 +36,18 @@ const ComparisonSection: React.FC = () => {
               <TableBody>
                 <TableRow className="border-b border-quantum-purple/20">
                   <TableCell className="p-3 font-medium">Security Basis</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">Laws of quantum physics</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">Mathematical complexity</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">Laws of quantum physics</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">Mathematical complexity</TableCell>
                 </TableRow>
                 
                 <TableRow className="border-b border-quantum-purple/20">
                   <TableCell className="p-3 font-medium">Quantum Computer Resistance</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">
                     <div className="flex items-center justify-center">
                       <Check className="h-5 w-5 text-green-500" />
                     </div>
                   </TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">
                     <div className="flex items-center justify-center">
                       <X className="h-5 w-5 text-red-500" />
                     </div>
@@ -56,12 +56,12 @@ const ComparisonSection: React.FC = () => {
                 
                 <TableRow className="border-b border-quantum-purple/20">
                   <TableCell className="p-3 font-medium">Eavesdropping Detection</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">
                     <div className="flex items-center justify-center">
                       <Check className="h-5 w-5 text-green-500" />
                     </div>
                   </TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">
                     <div className="flex items-center justify-center">
                       <X className="h-5 w-5 text-red-500" />
                     </div>
@@ -70,43 +70,43 @@ const ComparisonSection: React.FC = () => {
                 
                 <TableRow className="border-b border-quantum-purple/20">
                   <TableCell className="p-3 font-medium">Implementation Complexity</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">High (requires specialized hardware)</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">Low (software-based)</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">High (requires specialized hardware)</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">Low (software-based)</TableCell>
                 </TableRow>
                 
                 <TableRow className="border-b border-quantum-purple/20">
                   <TableCell className="p-3 font-medium">Maturity</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">Emerging technology</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">Well-established</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">Emerging technology</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">Well-established</TableCell>
                 </TableRow>
                 
                 <TableRow className="border-b border-quantum-purple/20">
                   <TableCell className="p-3 font-medium">Key Distribution Range</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">Limited (typically &lt; 100km)</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">Global (internet-based)</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">Limited (typically &lt; 100km)</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">Global (internet-based)</TableCell>
                 </TableRow>
                 
                 <TableRow className="border-b border-quantum-purple/20">
                   <TableCell className="p-3 font-medium">Theoretical Security</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">Information-theoretic secure</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">Computationally secure</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">Information-theoretic secure</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">Computationally secure</TableCell>
                 </TableRow>
                 
                 <TableRow>
                   <TableCell className="p-3 font-medium">Forward Secrecy</TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-purple/5">
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-purple/30">
                     <div className="flex items-center justify-center">
                       <Check className="h-5 w-5 text-green-500" />
                     </div>
                   </TableCell>
-                  <TableCell className="p-3 text-center bg-quantum-blue/5">Varies by protocol</TableCell>
+                  <TableCell className="p-3 text-center bg-black border-l border-r border-quantum-blue/30">Varies by protocol</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
           </div>
           
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="p-4 bg-quantum-purple/10 rounded-lg border border-quantum-purple/30">
+            <div className="p-4 bg-black rounded-lg border border-quantum-purple/30">
               <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
                 <Shield className="h-5 w-5 text-quantum-cyan" />
                 Quantum Advantage
@@ -117,7 +117,7 @@ const ComparisonSection: React.FC = () => {
               </p>
             </div>
             
-            <div className="p-4 bg-quantum-blue/10 rounded-lg border border-quantum-blue/30">
+            <div className="p-4 bg-black rounded-lg border border-quantum-blue/30">
               <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
                 <Lock className="h-5 w-5 text-quantum-light" />
                 Traditional Methods
@@ -132,7 +132,7 @@ const ComparisonSection: React.FC = () => {
       </Card>
       
       {/* Traditional key distribution card */}
-      <Card className="bg-background/50 backdrop-blur-sm border-quantum-blue/20 shadow-lg shadow-quantum-blue/5">
+      <Card className="bg-black border-quantum-blue/20 shadow-lg shadow-quantum-blue/5">
         <CardHeader>
           <CardTitle className="text-center flex items-center justify-center gap-2">
             <Lock className="h-6 w-6 text-quantum-light" />
@@ -143,7 +143,7 @@ const ComparisonSection: React.FC = () => {
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <div className="p-4 bg-quantum-blue/10 rounded-lg border border-quantum-blue/30">
+              <div className="p-4 bg-black rounded-lg border border-quantum-blue/30">
                 <h3 className="text-lg font-medium mb-2">RSA Key Exchange</h3>
                 <p className="text-sm">
                   RSA uses asymmetric cryptography where each party has a public and private key pair. The public key is used 
@@ -166,7 +166,7 @@ const ComparisonSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-quantum-blue/10 rounded-lg border border-quantum-blue/30">
+              <div className="p-4 bg-black rounded-lg border border-quantum-blue/30">
                 <h3 className="text-lg font-medium mb-2">Diffie-Hellman Key Exchange</h3>
                 <p className="text-sm">
                   Allows two parties to jointly establish a shared secret key over an insecure channel. It relies on the 
@@ -190,7 +190,7 @@ const ComparisonSection: React.FC = () => {
             </div>
             
             <div className="space-y-4">
-              <div className="p-4 bg-quantum-blue/10 rounded-lg border border-quantum-blue/30">
+              <div className="p-4 bg-black rounded-lg border border-quantum-blue/30">
                 <h3 className="text-lg font-medium mb-2">Pre-Shared Keys (PSK)</h3>
                 <p className="text-sm">
                   Symmetric keys that are exchanged between parties in advance through a secure, out-of-band channel. 
@@ -212,7 +212,7 @@ const ComparisonSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-quantum-blue/10 rounded-lg border border-quantum-blue/30">
+              <div className="p-4 bg-black rounded-lg border border-quantum-blue/30">
                 <h3 className="text-lg font-medium mb-2">Certificate-Based Key Exchange</h3>
                 <p className="text-sm">
                   Uses digital certificates issued by trusted Certificate Authorities (CAs) to authenticate public keys and 
@@ -234,7 +234,7 @@ const ComparisonSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-quantum-blue/10 rounded-lg border border-quantum-blue/30 mt-4">
+              <div className="p-4 bg-black rounded-lg border border-quantum-blue/30 mt-4">
                 <h3 className="text-lg font-medium mb-2">Post-Quantum Cryptography</h3>
                 <p className="text-sm">
                   Cryptographic algorithms designed to be secure against quantum computer attacks. These include 

@@ -8,7 +8,7 @@ interface StatusDisplayProps {
 
 const StatusDisplay: React.FC<StatusDisplayProps> = ({ step, showEavesdropper }) => {
   return (
-    <div className="w-full max-w-2xl bg-quantum-dark/50 border border-quantum-blue/20 rounded-lg p-4">
+    <div className="w-full max-w-2xl bg-black border border-quantum-blue/20 rounded-lg p-4">
       <h3 className="font-medium mb-2 text-quantum-light/90">Status:</h3>
       <div className="space-y-2 text-sm">
         {step === 0 && (

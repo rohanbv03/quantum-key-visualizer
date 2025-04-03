@@ -304,7 +304,7 @@ const BB84Visualization: React.FC = () => {
   };
 
   return (
-    <Card className="bg-background/50 backdrop-blur-sm border-quantum-purple/20 shadow-lg shadow-quantum-purple/5 overflow-hidden">
+    <Card className="bg-black border-quantum-purple/20 shadow-lg shadow-quantum-purple/5 overflow-hidden">
       <CardHeader className="pb-2">
         <CardTitle className="text-2xl font-bold text-glow">
           BB84 Quantum Key Distribution
@@ -328,13 +328,13 @@ const BB84Visualization: React.FC = () => {
           </div>
           
           {/* Step visualization */}
-          <div className="min-h-[300px] border border-quantum-cyan/20 rounded-lg bg-black/30 backdrop-blur-sm">
+          <div className="min-h-[300px] border border-quantum-cyan/20 rounded-lg bg-black backdrop-blur-sm">
             {renderStepContent()}
           </div>
         </div>
         
         {/* Controls */}
-        <div className="bg-muted p-4 flex justify-between items-center">
+        <div className="bg-black p-4 flex justify-between items-center border-t border-quantum-purple/20">
           <div className="text-sm font-medium">
             Step {currentStep + 1}/{SIMULATION_STEPS.length}
           </div>
