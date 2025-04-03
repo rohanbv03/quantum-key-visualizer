@@ -6,10 +6,10 @@ import { Separator } from '@/components/ui/separator';
 
 const ExplanationCard: React.FC = () => {
   return (
-    <Card className="bg-background/50 backdrop-blur-sm border-quantum-purple/20 shadow-lg shadow-quantum-purple/5">
+    <Card className="bg-black backdrop-blur-sm border-quantum-purple/20 shadow-lg shadow-quantum-purple/5">
       <CardHeader>
-        <CardTitle>Understanding Quantum Key Distribution</CardTitle>
-        <CardDescription>
+        <CardTitle className="text-quantum-light">Understanding Quantum Key Distribution</CardTitle>
+        <CardDescription className="text-quantum-light/70">
           Secure communication through quantum mechanics
         </CardDescription>
       </CardHeader>
@@ -18,13 +18,13 @@ const ExplanationCard: React.FC = () => {
       
       <CardContent className="pt-6">
         <Tabs defaultValue="overview">
-          <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="bb84">BB84 Protocol</TabsTrigger>
-            <TabsTrigger value="security">Security Features</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-3 bg-black/80 text-quantum-light">
+            <TabsTrigger value="overview" className="data-[state=active]:bg-quantum-blue/20 data-[state=active]:text-quantum-cyan">Overview</TabsTrigger>
+            <TabsTrigger value="bb84" className="data-[state=active]:bg-quantum-blue/20 data-[state=active]:text-quantum-cyan">BB84 Protocol</TabsTrigger>
+            <TabsTrigger value="security" className="data-[state=active]:bg-quantum-blue/20 data-[state=active]:text-quantum-cyan">Security Features</TabsTrigger>
           </TabsList>
           
-          <TabsContent value="overview" className="mt-4 space-y-4">
+          <TabsContent value="overview" className="mt-4 space-y-4 text-quantum-light">
             <p>
               Quantum Key Distribution (QKD) is a secure communication method that uses principles of quantum mechanics to encrypt information. Unlike traditional encryption, which relies on mathematical complexity, QKD's security is based on the fundamental laws of physics.
             </p>
@@ -42,7 +42,7 @@ const ExplanationCard: React.FC = () => {
             </div>
           </TabsContent>
           
-          <TabsContent value="bb84" className="mt-4 space-y-4">
+          <TabsContent value="bb84" className="mt-4 space-y-4 text-quantum-light">
             <p>
               The BB84 protocol, named after its inventors Charles Bennett and Gilles Brassard in 1984, was the first quantum cryptography protocol. It allows two parties to establish a shared random secret key using quantum properties.
             </p>
@@ -74,7 +74,7 @@ const ExplanationCard: React.FC = () => {
             </div>
           </TabsContent>
           
-          <TabsContent value="security" className="mt-4 space-y-4">
+          <TabsContent value="security" className="mt-4 space-y-4 text-quantum-light">
             <p>
               QKD provides security through fundamental physical principles rather than mathematical complexity, making it theoretically immune to computational advances.
             </p>
