@@ -44,10 +44,8 @@
 
   body {
     @apply text-white;
-    background-color: #121212; /* Matte black background */
-    background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
-    background-size: 24px 24px;
+    background-color: #000000; /* Pure black background */
+    background-image: none; /* Remove grid pattern */
   }
 
   ::-webkit-scrollbar {
@@ -91,7 +89,7 @@
   }
   
   .bank-card {
-    @apply relative rounded-lg bg-white shadow-md border border-gray-100 overflow-hidden transition-all duration-300;
+    @apply relative rounded-lg bg-black shadow-md border border-gray-800 overflow-hidden transition-all duration-300;
   }
   
   .bank-card:hover {
