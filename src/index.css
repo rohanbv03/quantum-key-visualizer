@@ -43,9 +43,10 @@
   }
 
   body {
-    @apply bg-bank-light text-bank-navy;
-    background-image: linear-gradient(to right, rgba(0,45,98,0.02) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(0,45,98,0.02) 1px, transparent 1px);
+    @apply text-white;
+    background-color: #121212; /* Matte black background */
+    background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
     background-size: 24px 24px;
   }
 

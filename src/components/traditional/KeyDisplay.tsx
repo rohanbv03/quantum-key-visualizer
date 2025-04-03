@@ -9,7 +9,7 @@ interface KeyDisplayProps {
 
 const KeyDisplay: React.FC<KeyDisplayProps> = ({ keyValue, isIntercepted = false }) => {
   return (
-    <div className={`mt-4 ${isIntercepted ? 'bg-destructive/10 border-destructive/30' : 'bg-bank-blue/10 border-bank-blue/30'} 
+    <div className={`mt-4 ${isIntercepted ? 'bg-destructive/20 border-destructive/30' : 'bg-bank-blue/20 border-bank-blue/30'} 
       p-3 rounded-md border shadow-sm`}>
       <div className="flex items-center gap-2 relative">
         {isIntercepted ? (
@@ -23,12 +23,12 @@ const KeyDisplay: React.FC<KeyDisplayProps> = ({ keyValue, isIntercepted = false
             <span className="text-xs font-medium text-bank-green ml-1">SECURE</span>
           </div>
         )}
-        <span className="font-mono text-sm bg-white/70 py-1 px-2 rounded ml-auto border border-gray-200 tracking-wider text-bank-navy font-semibold">{keyValue}</span>
+        <span className="font-mono text-sm bg-white/90 py-1 px-2 rounded ml-auto border border-gray-200 tracking-wider text-bank-navy font-semibold">{keyValue}</span>
       </div>
-      <div className="mt-2 border-t border-dashed border-bank-gray/20 pt-2">
+      <div className="mt-2 border-t border-dashed border-white/20 pt-2">
         <div className="flex justify-between items-center">
-          <span className="text-xs text-bank-navy font-medium">Transaction Key</span>
-          <span className="text-xs text-bank-navy font-medium">{new Date().toLocaleDateString()}</span>
+          <span className="text-xs text-white font-medium">Transaction Key</span>
+          <span className="text-xs text-white font-medium">{new Date().toLocaleDateString()}</span>
         </div>
       </div>
     </div>
