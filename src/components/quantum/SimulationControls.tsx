@@ -23,12 +23,12 @@ const SimulationControls: React.FC<SimulationControlsProps> = ({
         Step {currentStep + 1}/{SIMULATION_STEPS.length}
       </div>
       <div className="flex gap-2">
-        <Button variant="outline" onClick={onPreviousStep} disabled={currentStep === 0 || simRunning} className="border-quantum-cyan/40 hover:bg-quantum-cyan/20 text-gray-50">
+        <Button variant="outline" onClick={onPreviousStep} disabled={currentStep === 0 || simRunning} className="border-quantum-cyan/40 hover:bg-quantum-cyan/20 text-green-400">
           Previous
         </Button>
         
         {!simRunning ? <>
-            <Button variant="outline" onClick={onNextStep} disabled={currentStep === SIMULATION_STEPS.length - 1 || simRunning} className="border-quantum-cyan/40 hover:bg-quantum-cyan/20 text-slate-50">
+            <Button variant="outline" onClick={onNextStep} disabled={currentStep === SIMULATION_STEPS.length - 1 || simRunning} className="border-quantum-cyan/40 hover:bg-quantum-cyan/20 text-amber-400">
               Next
             </Button>
             
