@@ -26,12 +26,12 @@ const Person: React.FC<PersonProps> = ({ name, role, className }) => {
       {/* Name */}
       <div className="text-lg font-semibold text-quantum-light">{name}</div>
       
-      {/* Role */}
+      {/* Role - Updated for better visibility */}
       <div className={cn(
-        "text-sm px-2 py-1 rounded-md mt-1",
-        role === 'sender' ? "bg-quantum-blue/20 text-quantum-cyan" : 
-        role === 'receiver' ? "bg-quantum-purple/20 text-quantum-cyan" : 
-        "bg-red-500/20 text-red-400"
+        "text-sm font-bold px-3 py-1.5 rounded-md mt-1 uppercase tracking-wide shadow-md",
+        role === 'sender' ? "bg-quantum-blue/50 text-white border border-quantum-blue/70" : 
+        role === 'receiver' ? "bg-quantum-purple/50 text-white border border-quantum-purple/70" : 
+        "bg-red-500/50 text-white border border-red-500/70"
       )}>
         {role === 'sender' ? 'Sender' : role === 'receiver' ? 'Receiver' : 'Eavesdropper'}
       </div>
