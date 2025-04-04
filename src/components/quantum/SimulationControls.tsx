@@ -19,7 +19,7 @@ const SimulationControls: React.FC<SimulationControlsProps> = ({
   onPauseSimulation
 }) => {
   return <div className="bg-gradient-to-r from-black to-black/90 p-4 flex justify-between items-center border-t border-quantum-purple/20">
-      <div className="text-sm font-medium">
+      <div className="text-sm font-medium bg-slate-50">
         Step {currentStep + 1}/{SIMULATION_STEPS.length}
       </div>
       <div className="flex gap-2">
