@@ -4,7 +4,7 @@ import { Shield } from 'lucide-react';
 
 const EducationalNote: React.FC = () => {
   return (
-    <div className="w-full max-w-2xl bg-quantum-blue/10 border border-quantum-blue/30 rounded-lg p-4">
+    <div className="w-full max-w-2xl bg-black border border-quantum-blue/30 rounded-lg p-4">
       <h3 className="font-medium mb-2 flex items-center gap-2">
         <Shield className="h-5 w-5 text-quantum-light" />
         How Traditional Key Distribution Works
