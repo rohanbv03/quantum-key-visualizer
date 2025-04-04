@@ -70,16 +70,16 @@ const TraditionalKeyDistribution: React.FC = () => {
   };
 
   return (
-    <Card className="bg-black border-quantum-blue/20 shadow-lg shadow-quantum-blue/5">
+    <Card className="bg-gradient-to-br from-black via-quantum-purple/20 to-black border-quantum-blue/20 shadow-lg shadow-quantum-blue/5">
       <CardHeader>
-        <CardTitle className="text-center flex items-center justify-center gap-2">
+        <CardTitle className="text-center flex items-center justify-center gap-2 text-white">
           <Lock className="h-6 w-6 text-quantum-light" />
           <span>Traditional Key Distribution Simulation</span>
         </CardTitle>
       </CardHeader>
       
       <CardContent>
-        <div className="flex flex-col items-center space-y-6">
+        <div className="flex flex-col items-center space-y-6 text-white">
           {/* Controls */}
           <SimulationControls 
             startSimulation={startSimulation}
