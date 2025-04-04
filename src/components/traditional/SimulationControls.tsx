@@ -22,7 +22,7 @@ const SimulationControls: React.FC<SimulationControlsProps> = ({
       <Button
         variant="outline"
         onClick={startSimulation}
-        className="border-quantum-blue/40 hover:bg-quantum-blue/20"
+        className="border-quantum-blue/60 bg-quantum-blue/10 hover:bg-quantum-blue/30"
         disabled={isSimulating && step < 4}
       >
         Start Key Exchange
@@ -30,9 +30,9 @@ const SimulationControls: React.FC<SimulationControlsProps> = ({
       <Button
         variant="outline"
         onClick={toggleEavesdropper}
-        className={`border-quantum-purple/40 ${
-          showEavesdropper ? 'bg-quantum-purple/20' : ''
-        } hover:bg-quantum-purple/20`}
+        className={`border-quantum-purple/60 ${
+          showEavesdropper ? 'bg-quantum-purple/20' : 'bg-quantum-purple/5'
+        } hover:bg-quantum-purple/30`}
         disabled={isSimulating && step < 4}
       >
         {showEavesdropper ? 'Remove' : 'Add'} Eavesdropper

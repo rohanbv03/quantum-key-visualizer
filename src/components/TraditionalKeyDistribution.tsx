@@ -70,7 +70,7 @@ const TraditionalKeyDistribution: React.FC = () => {
   };
 
   return (
-    <Card className="bg-gradient-to-br from-black via-quantum-purple/20 to-black border-quantum-blue/20 shadow-lg shadow-quantum-blue/5">
+    <Card className="bg-gradient-to-br from-black/90 via-quantum-purple/10 to-quantum-blue/5 border-quantum-blue/20 shadow-lg shadow-quantum-blue/10">
       <CardHeader>
         <CardTitle className="text-center flex items-center justify-center gap-2 text-white">
           <Lock className="h-6 w-6 text-quantum-light" />

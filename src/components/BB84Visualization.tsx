@@ -23,7 +23,7 @@ const BB84Visualization: React.FC = () => {
   } = useQuantumSimulation();
 
   return (
-    <Card className="bg-gradient-to-br from-black via-quantum-blue/20 to-black border-quantum-purple/20 shadow-lg shadow-quantum-purple/5 overflow-hidden">
+    <Card className="bg-gradient-to-br from-black/80 via-quantum-cyan/10 to-black/90 border-quantum-purple/20 shadow-lg shadow-quantum-purple/10 overflow-hidden">
       <CardHeader className="pb-2">
         <CardTitle className="text-2xl font-bold text-glow">
           BB84 Quantum Key Distribution
@@ -47,7 +47,7 @@ const BB84Visualization: React.FC = () => {
           </div>
           
           {/* Step visualization */}
-          <div className="min-h-[300px] border border-quantum-cyan/20 rounded-lg bg-black/60 backdrop-blur-sm">
+          <div className="min-h-[300px] border border-quantum-cyan/20 rounded-lg bg-gradient-to-b from-black/70 to-quantum-blue/10 backdrop-blur-sm">
             <StepContentRenderer 
               currentStep={currentStep}
               keyBits={keyBits}
