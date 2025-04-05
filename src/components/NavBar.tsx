@@ -1,17 +1,14 @@
-
 import React from 'react';
 import { ShieldCheck, Lock, Menu, Search, User, CreditCard, DollarSign, HelpCircle, Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const NavBar: React.FC = () => {
-  return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white shadow-sm">
+  return <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white shadow-sm">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <ShieldCheck className="h-7 w-7 text-bank-navy" />
           <div className="flex flex-col">
             <span className="text-lg font-bold text-bank-navy">SecureBank</span>
-            <span className="text-xs text-bank-gray/70">Quantum Protection</span>
+            <span className="text-xs text-bank-gray/70">Quantum Protection in Banking </span>
           </div>
         </div>
         
@@ -51,8 +48,6 @@ const NavBar: React.FC = () => {
           </Button>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default NavBar;
